@@ -46,3 +46,9 @@ void k_measn_clustering_example::init_centroids() {
         }
     }
 }
+void k_measn_clustering_example::init_cluster() {
+    cluster = new int[n];
+    for (int i = 0; i < n; i++) {
+        cluster[i] = 0;
+    }
+}
