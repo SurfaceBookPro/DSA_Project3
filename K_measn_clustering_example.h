@@ -9,7 +9,7 @@ using namespace std;
 
 class k_measn_clustering_example {
     struct point{
-        int k;//id of the point
+        int id;
         double x;
         double y;
     };
@@ -20,7 +20,7 @@ class k_measn_clustering_example {
     };
 
     // Initialize the centroids by randomly selecting k points from the data set
-    vector<point> initCentroids(const vector<point>& dataPoints, int k);
+    vector<point> initCentroids(vector<point>& dataPoints, int k);
 
     // Assign each data point to its nearest centroid based on Euclidean distance
     void assignPointsToClusters(const std::vector<point>& dataPoints, const std::vector<point>& centroids, std::vector<cluster>& clusters);
