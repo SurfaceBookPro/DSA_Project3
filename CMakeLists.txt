@@ -3,4 +3,4 @@ project(DSA_Project3)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(DSA_Project3 main.cpp K_measn_clustering_example.h K_measn_clustering_example.cpp)
+add_executable(DSA_Project3 main.cpp K_measn_clustering.h K_measn_clustering.cpp)

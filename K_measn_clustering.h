@@ -2,8 +2,8 @@
 // Created by Jiantong wang on 3/8/23.
 //
 
-#ifndef DSA_PROJECT3_K_MEASN_CLUSTERING_EXAMPLE_H
-#define DSA_PROJECT3_K_MEASN_CLUSTERING_EXAMPLE_H
+#ifndef DSA_PROJECT3_K_MEASN_CLUSTERING_H
+#define DSA_PROJECT3_K_MEASN_CLUSTERING_H
 #include <vector>
 using namespace std;
 
@@ -38,4 +38,4 @@ class k_measn_clustering_example {
 };
 
 
-#endif //DSA_PROJECT3_K_MEASN_CLUSTERING_EXAMPLE_H
+#endif //DSA_PROJECT3_K_MEASN_CLUSTERING_H
