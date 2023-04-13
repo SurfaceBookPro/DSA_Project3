@@ -1,3 +1,4 @@
+#include <SFML/Graphics.hpp>
 #include <iostream>
 #include "HierarchicalClustering.h"
 #include "K_MeansClustering.h"
