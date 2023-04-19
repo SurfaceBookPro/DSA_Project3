@@ -78,7 +78,7 @@ int main() {
             double lat_double = stod(lat_str);
             double lon_double = stod(lon_str);
             if(lat_str.empty() || lon_str.empty()) continue;
-            if(lat_double == 0.0 || lon_double == 0.0 || lon_double < -74.2 ) continue;
+            if(lat_double == 0.0 || lon_double == 0.0 || lon_double < -74.2 || lon_double > -70.0 || lat_double < 40.5 || lat_double > 41.2) continue;
             double lat = stod(lat_str);
             double lon = stod(lon_str);
 
@@ -155,27 +155,28 @@ int main() {
     // Visualization: step 1
     cout << "Visualization started." << endl;
 
-    auto dataPoints = matplot::scatter(latitudes, longitudes);
+    auto dataPoints = matplot::scatter(longitudes, latitudes);
     dataPoints->marker_size(5);
     dataPoints->marker_face(true);
     dataPoints->marker_face_color({100.0, 200.0, 100.0});
     matplot::hold(matplot::on);
 
+
     //Your Longtitudes and Latitudes are reversed. I swapped them here.
-    auto kClusterPoints = matplot::scatter(kClusterLongitudes, kClusterLatitudes);
-    kClusterPoints->marker_size(5);
+    auto kClusterPoints = matplot::scatter(kClusterLatitudes, kClusterLongitudes );
+    kClusterPoints->marker_size(18);
     kClusterPoints->marker_face(true);
     kClusterPoints->marker_face_color({300.0, 100.0, 100.0});
     matplot::hold(matplot::on);
 
-    /*
+
     auto hierarchicalClusterPoints = matplot::scatter(hierarchicalClustersLat, hierarchicalClustersLon);
-    hierarchicalClusterPoints->marker_size(5);
+    hierarchicalClusterPoints->marker_size(10);
     hierarchicalClusterPoints->marker_face(true);
-    hierarchicalClusterPoints->marker_face_color({100.0, 100.0, 200.0});
+    hierarchicalClusterPoints->marker_face_color({100.0, 100.0, 300.0});
     matplot::hold(matplot::on);
 
-     */
+
 
     cout << "Visualization completed." << endl;
     matplot::show();
