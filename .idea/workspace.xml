@@ -11,7 +11,9 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
-      <config projectName="DSA_Project3" targetName="HelloSFML" />
+      <config projectName="DSA_Project3" targetName="nodesoup" />
+      <config projectName="DSA_Project3" targetName="matplot" />
+      <config projectName="DSA_Project3" targetName="DSA_Project3" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -20,7 +22,85 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5599f2fb-4495-4082-8768-0f8e749aeb52" name="Changes" comment="" />
+    <list default="true" id="5599f2fb-4495-4082-8768-0f8e749aeb52" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-b3c815983358e1b3dbda.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-93a7b5987d51f3e06ce9.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-78001729d23800fd533a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-04-19T21-00-57-0336.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-DSA_Project3-Debug-1962cca5477fa579eaec.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-matplot-Debug-725e536aea8cff07d984.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-nodesoup-Debug-6ba38db8b33ff522bf67.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/DSA_Project3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/NY_Taxi_Pickup_Data.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/NY_Taxi_Pickup_Data_Half.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/NY_Taxi_Pickup_Data_Mini.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/3rd_party/CMakeFiles/nodesoup.dir/nodesoup/src/algebra.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/3rd_party/CMakeFiles/nodesoup.dir/nodesoup/src/fruchterman_reingold.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/3rd_party/CMakeFiles/nodesoup.dir/nodesoup/src/kamada_kawai.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/3rd_party/CMakeFiles/nodesoup.dir/nodesoup/src/layout.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/3rd_party/CMakeFiles/nodesoup.dir/nodesoup/src/nodesoup.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/3rd_party/libnodesoup.a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/bars.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/box_chart.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/circles.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/contours.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/error_bar.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/filled_area.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/function_line.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/histogram.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/labels.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/line.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/matrix.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/network.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/parallel_lines.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/stair.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/string_function.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/surface.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/axes_objects/vectors.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/backend/backend_interface.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/backend/backend_registry.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/backend/gnuplot.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/axes_object.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/axes_type.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/axis_type.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/figure_registry.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/figure_type.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/legend.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/core/line_spec.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/freestanding/axes_functions.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/freestanding/histcounts.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/colors.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/common.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/contourc.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/world_cities.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/world_map_10m.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/world_map_110m.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/CMakeFiles/matplot.dir/util/world_map_50m.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-build/source/matplot/libmatplot.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cache-v2-efb5e49886a57dd1594c.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/cmakeFiles-v1-501dc2bc83647bf7c1ad.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/codemodel-v2-372b87089e41d2da2f74.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/index-2023-04-17T19-24-22-0983.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-HelloSFML-Debug-a22cd9eaeac49d528d18.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-matplot-Debug-add77dc16c4fb71a1527.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-my_target-Debug-66693908105c5b555bf7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.cmake/api/v1/reply/target-nodesoup-Debug-07a821c7a8f59d6b6a7e.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/util/contourc.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-src/source/matplot/util/contourc.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-subbuild/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-subbuild/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-subbuild/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/_deps/matplotplusplus-subbuild/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,35 +122,52 @@
     <option name="minorVersion" value="3.2" />
   </component>
   <component name="ProjectId" id="2MkVyDtIBpRuap4xHfNL5Dw9cog" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.advertisement.text.has.clang-format&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jiantongwang/Documents/Coding/DSA_Project3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="HelloSFML" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA_Project3" TARGET_NAME="HelloSFML" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DSA_Project3" RUN_TARGET_NAME="HelloSFML">
+}</component>
+  <component name="RunManager" selected="CMake Application.DSA_Project3">
+    <configuration name="DSA_Project3" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA_Project3" TARGET_NAME="DSA_Project3" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DSA_Project3" RUN_TARGET_NAME="DSA_Project3">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="matplot" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA_Project3" TARGET_NAME="matplot" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="nodesoup" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DSA_Project3" TARGET_NAME="nodesoup" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.DSA_Project3" />
+      <item itemvalue="CMake Application.nodesoup" />
+      <item itemvalue="CMake Application.matplot" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -89,11 +186,28 @@
       <workItem from="1681064055686" duration="663000" />
       <workItem from="1681416024694" duration="147000" />
       <workItem from="1681416252586" duration="984000" />
+      <workItem from="1681937807426" duration="61000" />
+      <workItem from="1681937877956" duration="159000" />
+      <workItem from="1681938046864" duration="104000" />
+      <workItem from="1681938174345" duration="171000" />
+      <workItem from="1681938376849" duration="50000" />
+      <workItem from="1681938440284" duration="2817000" />
+      <workItem from="1681941280083" duration="539000" />
+      <workItem from="1681941824143" duration="1677000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticFoundErrors value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

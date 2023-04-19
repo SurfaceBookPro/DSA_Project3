@@ -1,5 +1,4 @@
-/Users/jiantongwang/Documents/Coding/DSA_Project3/cmake-build-debug/CMakeFiles/HelloSFML.dir
-/Users/jiantongwang/Documents/Coding/DSA_Project3/cmake-build-debug/CMakeFiles/my_target.dir
+/Users/jiantongwang/Documents/Coding/DSA_Project3/cmake-build-debug/CMakeFiles/DSA_Project3.dir
 /Users/jiantongwang/Documents/Coding/DSA_Project3/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/jiantongwang/Documents/Coding/DSA_Project3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/jiantongwang/Documents/Coding/DSA_Project3/cmake-build-debug/_deps/matplotplusplus-build/CMakeFiles/edit_cache.dir

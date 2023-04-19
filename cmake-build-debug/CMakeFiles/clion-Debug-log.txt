@@ -1,31 +1,7 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/jiantongwang/Documents/Coding/DSA_Project3 -B /Users/jiantongwang/Documents/Coding/DSA_Project3/cmake-build-debug
--- Found SFML 2.5.1 in /opt/homebrew/lib/cmake/SFML
-Setting CXX flags to default for Debug mode ( -std=c++11 -O0)
--- Found PkgConfig: /opt/homebrew/bin/pkg-config (found version "0.29.2") 
--- Found JPEG: /opt/homebrew/lib/libjpeg.dylib (found version "80") 
--- Found TIFF: /opt/homebrew/lib/libtiff.dylib (found version "4.0.9")  
--- Found ZLIB: /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/lib/libz.tbd (found version "1.2.11") 
--- Found PNG: /opt/homebrew/lib/libpng.dylib (found version "1.4.12") 
--- Looking for sgemm_
--- Looking for sgemm_ - not found
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD
--- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
--- Found Threads: TRUE  
--- Looking for dgemm_
--- Looking for dgemm_ - found
--- Found BLAS: /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Accelerate.framework  
--- Looking for cheev_
--- Looking for cheev_ - found
--- Found LAPACK: /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/System/Library/Frameworks/Accelerate.framework;-lm;-ldl  
--- Found FFTW: /opt/homebrew/include   
--- Looking for C++ include filesystem
--- Looking for C++ include filesystem - found
--- Performing Test CXX_FILESYSTEM_NO_LINK_NEEDED
--- Performing Test CXX_FILESYSTEM_NO_LINK_NEEDED - Success
+Setting CXX flags to default for Debug mode ( -O0)
 Warning: std::filesystem doesn't set INTERFACE_INCLUDE_DIRECTORIES. No include_directories set.
 Setting matplotplusplus compiler options
--- Looking for __fbufsize
--- Looking for __fbufsize - not found
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/jiantongwang/Documents/Coding/DSA_Project3/cmake-build-debug

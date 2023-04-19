@@ -528,6 +528,15 @@ ZLIB_LIBRARY_DEBUG:FILEPATH=ZLIB_LIBRARY_DEBUG-NOTFOUND
 //Path to a library.
 ZLIB_LIBRARY_RELEASE:FILEPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/lib/libz.tbd
 
+//Value Computed by CMake
+matplotTest_BINARY_DIR:STATIC=/Users/jiantongwang/Documents/Coding/DSA_Project3/cmake-build-debug
+
+//Value Computed by CMake
+matplotTest_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+matplotTest_SOURCE_DIR:STATIC=/Users/jiantongwang/Documents/Coding/DSA_Project3
+
 //Path to a library.
 pkgcfg_lib_PKG_FFTW_fftw3:FILEPATH=/opt/homebrew/Cellar/fftw/3.3.10_1/lib/libfftw3.dylib
 
