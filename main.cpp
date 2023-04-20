@@ -54,7 +54,10 @@ pair<vector<point>, vector<cluster>> sample(int n, vector<double>& latitudes, ve
 }
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    std::cout << "Please type the number of cluster you want:" << std::endl;
+    string n;
+    getline(cin, n);
+    int clusterNum = stoi(n);
 
     HierarchicalClustering hierarchicalClustering;
     K_MeansClustering kMeansClustering;
@@ -64,7 +67,7 @@ int main() {
     vector<double> longitudes;
     int i = 0;
 
-    ifstream file("NY_Taxi_Pickup_Data.csv");
+    ifstream file("NY_Taxi_Pickup_Data_Mini.csv");
     if (file.is_open()) {
         string line;
         getline(file, line);
@@ -77,6 +80,7 @@ int main() {
 
             double lat_double = stod(lat_str);
             double lon_double = stod(lon_str);
+
             if(lat_str.empty() || lon_str.empty()) continue;
             if(lat_double == 0.0 || lon_double == 0.0 || lon_double < -74.2 || lon_double > -70.0 || lat_double < 40.5 || lat_double > 41.2) continue;
             double lat = stod(lat_str);
@@ -118,7 +122,7 @@ int main() {
     /// Hierarchical Clustering Test
     vector<double> hierarchicalClustersLat;
     vector<double> hierarchicalClustersLon;
-    hierarchicalClustering.formClusters(testSet.second, 5);
+    hierarchicalClustering.formClusters(testSet.second, clusterNum);
     int clusterID = 0;
     for(const cluster& cluster : testSet.second){
         cout << "Cluster ID: " << clusterID << "   Size: " << cluster.coordinates.size() << endl;
@@ -138,7 +142,7 @@ int main() {
     vector<double> kClusterLatitudes;
     vector<double> kClusterLongitudes;
 
-    vector<pair<kCluster, vector<point>>> kClusters = kMeansClustering.formClusters(testSet.first, 5, minLat, minLon, maxLat, maxLon);
+    vector<pair<kCluster, vector<point>>> kClusters = kMeansClustering.formClusters(testSet.first, clusterNum, minLat, minLon, maxLat, maxLon);
     for(const auto& clusterData : kClusters){
         /*
         for(const point& p : clusterData.second){
@@ -156,6 +160,7 @@ int main() {
     cout << "Visualization started." << endl;
 
     auto dataPoints = matplot::scatter(longitudes, latitudes);
+    cout << "Data points number for datapoints" << longitudes.size() << " " << latitudes.size() << endl;
     dataPoints->marker_size(5);
     dataPoints->marker_face(true);
     dataPoints->marker_face_color({100.0, 200.0, 100.0});
@@ -164,6 +169,7 @@ int main() {
 
     //Your Longtitudes and Latitudes are reversed. I swapped them here.
     auto kClusterPoints = matplot::scatter(kClusterLatitudes, kClusterLongitudes );
+    cout << "Data points number for k-means" << kClusterLatitudes.size() << " " << kClusterLongitudes.size() << endl;
     kClusterPoints->marker_size(18);
     kClusterPoints->marker_face(true);
     kClusterPoints->marker_face_color({300.0, 100.0, 100.0});
@@ -171,6 +177,7 @@ int main() {
 
 
     auto hierarchicalClusterPoints = matplot::scatter(hierarchicalClustersLat, hierarchicalClustersLon);
+    cout << "Data points number for hierarchical" << hierarchicalClustersLat.size() << " " << hierarchicalClustersLon.size() << endl;
     hierarchicalClusterPoints->marker_size(10);
     hierarchicalClusterPoints->marker_face(true);
     hierarchicalClusterPoints->marker_face_color({100.0, 100.0, 300.0});
