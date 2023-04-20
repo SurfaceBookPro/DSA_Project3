@@ -12,6 +12,56 @@ double K_MeansClustering::euclideanDistance(kCluster& cluster, const point& poin
     double ydiff = cluster.avgY - point.y;
     return sqrt(pow(xdiff, 2) + pow(ydiff, 2));
 }
+vector<kCluster> K_MeansClustering::generateClusters(int n, double minLatitude, double minLongtitude, double maxLatitude, double maxLongtitude, vector<point>& points) {
+    vector<kCluster> clusters(n);
+
+    // Set the first cluster randomly
+    random_device rd;
+    mt19937 gen(rd());
+    uniform_real_distribution<> disLat(minLatitude, maxLatitude);
+    uniform_real_distribution<> disLon(minLongtitude, maxLongtitude);
+    point randomPoint = {disLon(gen), disLat(gen) };
+    kCluster& firstCluster = clusters.front();
+    firstCluster.clusterID = 0;
+    firstCluster.add(randomPoint);
+    firstCluster.updateCenter();
+
+    // Set the remaining clusters using kmeans++ initialization
+    for (int i = 1; i < n; i++) {
+        double sumOfDistances = 0.0;
+        for (kCluster& cluster : clusters) {
+            for (const auto& point : points) {
+                double distance = euclideanDistance(cluster, point);
+                sumOfDistances += distance * distance;
+            }
+        }
+
+        double rnd = disLat(gen) * disLon(gen) * sumOfDistances;
+        double partialSum = 0.0;
+        int newClusterIndex = 0;
+        for (int j = 0; j < clusters.size(); j++) {
+            for (const auto& point : points) {
+                double distance = euclideanDistance(clusters[j], point);
+                partialSum += distance * distance;
+                if (partialSum > rnd) {
+                    newClusterIndex = j;
+                    break;
+                }
+            }
+
+            if (newClusterIndex != 0) {
+                break;
+            }
+        }
+
+        kCluster& newCluster = clusters[i];
+        newCluster.clusterID = i;
+        newCluster.add(points[newClusterIndex]);
+        newCluster.updateCenter();
+    }
+
+    return clusters;
+}
 
 vector<kCluster> K_MeansClustering::generateClusters(int n, double minLat, double minLon, double maxLat, double maxLon) {
     vector<kCluster> clusters;
@@ -38,7 +88,7 @@ vector<kCluster> K_MeansClustering::generateClusters(int n, double minLat, doubl
 }
 
 vector<pair<struct kCluster, vector<struct point>>> K_MeansClustering::formClusters(vector<point>& points, int n, double minLat, double minLon, double maxLat, double maxLon) {
-    vector<kCluster> clusters = generateClusters(n, minLat, minLon, maxLat, maxLon);
+    vector<kCluster> clusters = generateClusters(n, minLat, minLon, maxLat, maxLon, points);
 
     //View starting coordinates of clusters
     for (kCluster cluster: clusters) {

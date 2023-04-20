@@ -45,6 +45,7 @@ struct kCluster{
 };
 class K_MeansClustering {
     double euclideanDistance(kCluster& cluster, const point& point);
+    vector<kCluster> generateClusters(int n, double minLatitude, double minLongtitude, double maxLatitude, double maxLongtitude, vector<point>& points);
     vector<kCluster> generateClusters(int n, double minLatitude, double minLongtitude, double maxLatitude, double maxLongtitude);
     vector<pair<kCluster, vector<point>>> groupByCluster(vector<point>& points, vector<kCluster>& kClusters);
 public:
