@@ -6,8 +6,9 @@
 #include <random>
 #include <algorithm>
 #include <set>
-#include <matplot/matplot.h>
 
+#include <matplot/matplot.h>
+using namespace std::chrono;
 using namespace std;
 //randomly picks n points from the dataset
 pair<vector<point>, vector<cluster>> sample(int n, vector<double>& latitudes, vector<double>& longitudes){
@@ -25,16 +26,16 @@ pair<vector<point>, vector<cluster>> sample(int n, vector<double>& latitudes, ve
         chosen_indices.insert(index);
 
         point KmeansPoint{
-            .x = longitudes[index],
-            .y = latitudes[index],
-            .id = i,
-            .clusterNo = -1
+                .x = longitudes[index],
+                .y = latitudes[index],
+                .id = i,
+                .clusterNo = -1
         };
 
         coordinate HierarchicalCoordinate{
-            .x = longitudes[index],
-            .y = latitudes[index],
-            .id = i
+                .x = longitudes[index],
+                .y = latitudes[index],
+                .id = i
         };
 
         vector<coordinate> c;
@@ -50,7 +51,7 @@ pair<vector<point>, vector<cluster>> sample(int n, vector<double>& latitudes, ve
         sample_Hierarchical.push_back(HierarchicalCluster);
     }
 
-   return {sample_Kmeans, sample_Hierarchical};
+    return {sample_Kmeans, sample_Hierarchical};
 }
 
 int main() {
@@ -58,6 +59,7 @@ int main() {
     string n;
     getline(cin, n);
     int clusterNum = stoi(n);
+
 
     HierarchicalClustering hierarchicalClustering;
     K_MeansClustering kMeansClustering;
@@ -67,8 +69,11 @@ int main() {
     vector<double> longitudes;
     int i = 0;
 
-    ifstream file("NY_Taxi_Pickup_Data_Mini.csv");
+
+
+    ifstream file("NY_Taxi_Pickup_data_Mini.csv");
     if (file.is_open()) {
+
         string line;
         getline(file, line);
         while (getline(file, line)) {
@@ -78,16 +83,29 @@ int main() {
             getline(ss, lat_str, ',');
             getline(ss, lon_str);
 
-            double lat_double = stod(lat_str);
-            double lon_double = stod(lon_str);
+            try {
+                try {
+                    double lat_double = stod(lat_str);
+                    double lon_double = stod(lon_str);
 
-            if(lat_str.empty() || lon_str.empty()) continue;
-            if(lat_double == 0.0 || lon_double == 0.0 || lon_double < -74.2 || lon_double > -70.0 || lat_double < 40.5 || lat_double > 41.2) continue;
-            double lat = stod(lat_str);
-            double lon = stod(lon_str);
+                    if (lat_str.empty() || lon_str.empty())
+                        continue;
+                    if (lat_double == 0.0 || lon_double == 0.0 || lon_double < -74.2 || lon_double > -70.0 || lat_double < 40.5 || lat_double > 41.2)
+                        continue;
+                    double lat = stod(lat_str);
+                    double lon = stod(lon_str);
 
-            latitudes.push_back(lat);
-            longitudes.push_back(lon);
+                    latitudes.push_back(lat);
+                    longitudes.push_back(lon);
+                }
+                catch (const std::invalid_argument& ia) {
+                    std::cerr << "Invalid argument: " << ia.what() << " in line " << i << ", lat=" << lat_str << ", lon=" << lon_str << std::endl;
+                }
+            }
+            catch (...) {
+                // catch all other exceptions and continue with the next line
+                continue;
+            }
         }
     } else {
         cout << "Error: could not open file ./NY_Taxi_Pickup_Data.csv" << endl;
@@ -117,14 +135,19 @@ int main() {
 
 
     //for(cluster& c : testSet.second)
-      //  cout << c.coordinates[0].x << ", " << c.coordinates[0].y << ", " << c.coordinates[0].id << endl;
+    //  cout << c.coordinates[0].x << ", " << c.coordinates[0].y << ", " << c.coordinates[0].id << endl;
+
+    auto start = std::chrono::high_resolution_clock::now();
 
     /// Hierarchical Clustering Test
     vector<double> hierarchicalClustersLat;
     vector<double> hierarchicalClustersLon;
     hierarchicalClustering.formClusters(testSet.second, clusterNum);
     int clusterID = 0;
+
     for(const cluster& cluster : testSet.second){
+
+
         cout << "Cluster ID: " << clusterID << "   Size: " << cluster.coordinates.size() << endl;
         cout << "Cluster Center Coordinates: " << cluster.avgX << "," << cluster.avgY << endl;
         hierarchicalClustersLat.push_back(cluster.avgX);
@@ -136,14 +159,22 @@ int main() {
         clusterID++;
         cout << endl;
         cout << endl;
+
+
+
     }
+
 
     /// K-means Clustering Test
     vector<double> kClusterLatitudes;
     vector<double> kClusterLongitudes;
 
+
+
     vector<pair<kCluster, vector<point>>> kClusters = kMeansClustering.formClusters(testSet.first, clusterNum, minLat, minLon, maxLat, maxLon);
     for(const auto& clusterData : kClusters){
+
+
         /*
         for(const point& p : clusterData.second){
             cout << "ID: " << p.id << ",   Coordinates: " << p.x << "," << p.y << "   , Cluster No: " << p.clusterNo <<endl;
@@ -154,7 +185,11 @@ int main() {
         cout << endl;
         kClusterLatitudes.push_back(clusterData.first.avgX);
         kClusterLongitudes.push_back(clusterData.first.avgY);
+
+
     }
+
+
 
     // Visualization: step 1
     cout << "Visualization started." << endl;

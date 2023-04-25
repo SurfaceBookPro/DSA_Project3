@@ -6,6 +6,10 @@
 #include <iostream>
 #include <random>
 #include "K_MeansClustering.h"
+#include <chrono>
+
+///start of clock here
+auto start = std::chrono::high_resolution_clock::now();
 
 double K_MeansClustering::euclideanDistance(kCluster& cluster, const point& point) {
     double xdiff = cluster.avgX - point.x;
@@ -87,6 +91,8 @@ vector<kCluster> K_MeansClustering::generateClusters(int n, double minLat, doubl
     return clusters;
 }
 
+
+
 vector<pair<struct kCluster, vector<struct point>>> K_MeansClustering::formClusters(vector<point>& points, int n, double minLat, double minLon, double maxLat, double maxLon) {
     vector<kCluster> clusters = generateClusters(n, minLat, minLon, maxLat, maxLon, points);
 
@@ -125,8 +131,16 @@ vector<pair<struct kCluster, vector<struct point>>> K_MeansClustering::formClust
         //update the cluster centers according to the points they have
         for (kCluster &cluster: clusters) cluster.updateCenter();
     }
+
+
+
+
     return groupByCluster(points, clusters);
+
+
+
 }
+
 
 //grouping points by their cluster no for convenience
 vector<pair<kCluster, vector<point>>> K_MeansClustering::groupByCluster(vector<point> &points, vector<kCluster>& kClusters) {
@@ -143,5 +157,14 @@ vector<pair<kCluster, vector<point>>> K_MeansClustering::groupByCluster(vector<p
         res.push_back(clusterData);
         i++;
     }
+
+    auto end = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(end - start);
+    std::cout << "Time taken by K-means: " << duration.count() << " milliseconds" << endl;
+
     return res;
+
+
+
 }
+
