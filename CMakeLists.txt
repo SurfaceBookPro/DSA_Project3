@@ -4,7 +4,7 @@ project(DSA_Project3)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(DSA_Project3 HierarchicalClustering.h HierarchicalClustering.cpp K_MeansClustering.h K_MeansClustering.cpp main.cpp K_means_clustering.h K_means_clustering.cpp)
+add_executable(DSA_Project3 HierarchicalClustering.h HierarchicalClustering.cpp K_MeansClustering.h K_MeansClustering.cpp main.cpp)
 
 include(FetchContent)
 FetchContent_Declare(matplotplusplus
